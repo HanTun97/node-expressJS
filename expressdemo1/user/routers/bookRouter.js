@@ -9,10 +9,4 @@ router.get('/api', express.json(), (req, res) => {
 });
 
 
-
-
-
-
-
-
 module.exports = router;

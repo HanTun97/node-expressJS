@@ -4,8 +4,8 @@ const path = require('path');
 const router = express.Router();
 
 router.get('/', (req, res, next) => {
-    throw new Error('Error in product add');
-    // res.sendFile(path.join(__dirname, '..', '..', 'public', 'assets', 'views', 'index.html'));
+    // throw new Error('Error in product add');
+    res.sendFile(path.join(__dirname, '..', '..', 'public', 'assets', 'views', 'index.html'));
 });
 
 router.post('/', express.urlencoded({ extended: true }), (req, res, next) => {
