@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/HanTun97/node-expressJS/issues"
   },
-  "homepage": "https://github.com/HanTun97/node-expressJS#readme"
+  "homepage": "https://github.com/HanTun97/node-expressJS#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
