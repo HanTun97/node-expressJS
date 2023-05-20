@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/products.css">
+</head>
+
+<body>
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <img src="../img/Expressjs.png" alt="" />
+                <h3>Hello!</h3>
+                <p>MUM Express JS System</p>
+            </div>
+            <div class="col-md-9 register-right">
+                
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">New Product Form</h3>
+                        <div class="row register-form">
+                            <form class="row g-3" action=" " method="post">
+                                <div class="col-md-6">
+                                    <label for="productNum" class="form-label">Product Number</label>
+                                    <input type="text" class="form-control" id="productNum" name="productNum">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="quantityStock" class="form-label">Quantity In Stock</label>
+                                    <input type="number" min="0" class="form-control" id="quantityStock" placeholder="0" name="quantityStock">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Product Name</label>
+                                    <input type="text" class="form-control" id="name" name="name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="supplier" class="form-label">Supplier:</label>
+                                    <select id="supplier" class="form-select" name="supplier">
+                                        <option class="hidden" selected disabled>Select a Supplier</option>
+                                        <option>Bu Bu</option>
+                                        <option>Du Du</option>
+                                        <option>Ju Ju</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="unitPrice" class="form-label">Unit Price</label>
+                                    <input type="number" min="0" step=any class="form-control" id="unitPrice" placeholder="0.0" name="unitPrice">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="suppliedDate" class="form-label">Date Supplied</label>
+                                    <input type="date" class="form-control" id="suppliedDate" name="suppliedDate">
+                                    <small id="dateHelp" class="form-text text-muted">Enter a valid Date.</small>
+                                </div>
+                                <div class="col-4">
+                                    <button type="reset" class="btn btn-outline-primary">reset</button>
+                                </div>
+                                <div class="col-4">
+                                    <button type="reset" class="btn btn-outline-danger">Cancel</button>
+                                </div>
+                                <div class="col-4">
+                                    <button type="submit" class="btn btn-primary">Add Product</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Login - Web Form1</title>
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <link href='#' rel='stylesheet'>
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="./css/users.css">
+</head>
+
+<body className='snippet-body'>
+    <div id="content" class="flex">
+        <div class="">
+
+            <div class="page-content page-container" id="page-content">
+                <div class="padding">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header"><strong>Login to your account</strong></div>
+                                <div class="card-body">
+                                    <form action="" method="post">
+                                        <div class="form-group"><label class="text-muted" for="exampleInputEmail1">User
+                                                Name</label><input type="text" class="form-control" required
+                                                id="exampleInputEmail1" aria-describedby="name" name="name"
+                                                placeholder="Enter Name">
+                                        </div>
+                                        <div class="form-group"><label class="text-muted" for="website">Website
+                                            address</label><input type="url" class="form-control" pattern="^(http|https)://.+"
+                                            id="website" aria-describedby="emailHelp" name="website"
+                                            placeholder="Enter Website">
+                                    </div>
+                                        <div class="form-group"><label class="text-muted"
+                                                for="password_input">Password</label><input type="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[`!@#$%^&*()_+\-=\[\]{};':\\|,.<>\/?~]).{10,}"
+                                                class="form-control" id="password_input" required placeholder="Password" name="pwd">
+                                            <small id="passwordHelp" class="form-text text-muted">your password is saved
+                                                in encrypted form</small>
+                                        </div>
+                                        
+                                        <ul class="strength-list">
+                                            <li> <span class="loweruppercase list-group"> <i class="fa fa-circle"></i> <span>Lowercase
+                                                        uppercase</span> </span> </li>
+                                            <li> <span class="list-group numbercase"> <i class="fa fa-circle"></i> <span>Number
+                                                        (0-9)</span> </span> </li>
+                                            <li> <span class="list-group specialcase"> <i class="fa fa-circle"></i> <span>Special
+                                                        Characters(!#@$%*)</span> </span> </li>
+                                            <li> <span class="list-group numcharacter"> <i class="fa fa-circle"></i> <span>10
+                                                        Characters</span> </span> </li>
+                                        </ul>
+                                        <div class="form-group">
+                                            <div class="form-check"><input type="checkbox" name="checkbox"
+                                                    class="form-check-input"><label class="form-check-label">Check me
+                                                    out</label></div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js'></script>
+    <script type='text/javascript' src="../js/user.js"></script>
+
+</body>
+
+</html>

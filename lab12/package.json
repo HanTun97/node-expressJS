@@ -1,0 +1,22 @@
+{
+  "name": "lab12",
+  "version": "1.0.0",
+  "description": "Lab ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HanTun97/node-expressJS.git"
+  },
+  "author": "Han Tun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HanTun97/node-expressJS/issues"
+  },
+  "homepage": "https://github.com/HanTun97/node-expressJS#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
